@@ -401,7 +401,7 @@ a.uk-link-heading:hover {
 
 /* ------------------------------------------------------- */
 .ui-hero-bg {
-  background: center / cover no-repeat url("/src/dist/ui/img/Ellipse.svg");
+  background: center / cover no-repeat url("/src/dist/ui/img/ellipse.svg");
 }
 .ui-text-navy-blue {
   color: #000080;
