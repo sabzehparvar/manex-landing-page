@@ -1,17 +1,17 @@
 .fontface-vazirmatn {
-  font-family: 'VazirMatn' !important;
+  font-family: "VazirMatn" !important;
 }
 
 .fontface-vazir-fa {
-  font-family: 'VazirMatnFa' !important;
+  font-family: "VazirMatnFa" !important;
 }
 
 html {
-  font-family: 'VazirMatn';
+  font-family: "VazirMatn";
   font-size: 14px;
   line-height: 1.7;
   color: #2d354a;
-  background-color: #f4f7fb;
+  background-color: #f6f4f3;
 }
 @media (min-width: 640px) {
   html {
@@ -51,7 +51,7 @@ h6,
 .uk-heading-xlarge,
 .uk-heading-2xlarge,
 .uk-heading-3xlarge {
-  font-family: 'VazirMatn';
+  font-family: "VazirMatn";
   font-weight: bold;
   color: #081f3c;
   line-height: auto !important;
@@ -358,7 +358,7 @@ a.uk-link-heading:hover {
 }
 
 .uk-logo {
-  font-family: 'VazirMatn';
+  font-family: "VazirMatn";
   color: #081f3c;
 }
 
@@ -371,7 +371,7 @@ a.uk-link-heading:hover {
 }
 
 .uk-accordion-title::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -385,7 +385,7 @@ a.uk-link-heading:hover {
 }
 
 .uk-open > .uk-accordion-title::before {
-  background-image: url('../icon/ic-plus.svg');
+  background-image: url("../icon/ic-plus.svg");
   transform: translateY(-50%) rotate(45deg);
 }
 
@@ -397,4 +397,24 @@ a.uk-link-heading:hover {
 
 .uk-accordion-content ol li {
   padding-right: 20px;
+}
+
+/* ------------------------------------------------------- */
+.ui-hero-bg {
+  background: center / cover no-repeat url("/src/dist/ui/img/Ellipse.svg");
+}
+.ui-text-navy-blue {
+  color: #000080;
+}
+.ui-text-red {
+  color: red;
+}
+.ui-text-grey {
+  color: #5c677e;
+}
+.ui-button-primary {
+  width: 230px;
+  height: 64px;
+  border-radius: 50px;
+  line-height: 64px;
 }
