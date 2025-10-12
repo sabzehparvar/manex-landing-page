@@ -459,6 +459,9 @@ a.uk-link-heading:hover {
 .ui-text-grey {
   color: #5c677e;
 }
+.ui-text-black {
+  color: #081F3C;
+}
 .ui-button-primary {
   width: 230px;
   height: 64px;
