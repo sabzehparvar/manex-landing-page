@@ -400,6 +400,53 @@ a.uk-link-heading:hover {
 }
 
 /* ------------------------------------------------------- */
+@keyframes leftCoin {
+  0%,
+  100% {
+    transform: scaleX(-1) translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: scaleX(-1) translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: scaleX(-1) translateY(8px);
+  }
+  80% {
+    transform: scaleX(-1) translateY(6.4px);
+  }
+  90% {
+    transform: scaleX(-1) translateY(-6.4px);
+  }
+}
+@keyframes rightCoin {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+  80% {
+    transform: translateY(6.4px);
+  }
+  90% {
+    transform: translateY(-6.4px);
+  }
+}
+
 .ui-hero-bg {
   background: center / cover no-repeat url('/src/dist/ui/img/ellipse.svg');
 }
@@ -419,8 +466,8 @@ a.uk-link-heading:hover {
   line-height: 64px;
 }
 .ui-coin-hero-left {
-  width: 90px;
-  height: 81px;
+  width: 60px;
+  height: 54px;
   background: center / cover no-repeat url('/src/dist/ui/img/coin.svg');
   position: absolute;
   left: 0;
@@ -428,4 +475,27 @@ a.uk-link-heading:hover {
   transform: scaleX(-1);
   z-index: 0;
   pointer-events: none;
+  animation: leftCoin 5s linear 0s infinite normal forwards;
+}
+.ui-coin-hero-right {
+  width: 78px;
+  height: 70px;
+  background: center / cover no-repeat url('/src/dist/ui/img/coin.svg');
+  position: absolute;
+  right: 0;
+  top: -20px;
+
+  z-index: 0;
+  pointer-events: none;
+  animation: rightCoin 7s linear 0s infinite normal forwards;
+}
+@media (min-width: 960px) {
+  .ui-coin-hero-left {
+    width: 115px;
+    height: 104px;
+  }
+  .ui-coin-hero-right {
+    width: 115px;
+    height: 104px;
+  }
 }
