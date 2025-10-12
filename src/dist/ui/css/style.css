@@ -1,13 +1,13 @@
 .fontface-vazirmatn {
-  font-family: "VazirMatn" !important;
+  font-family: 'VazirMatn' !important;
 }
 
 .fontface-vazir-fa {
-  font-family: "VazirMatnFa" !important;
+  font-family: 'VazirMatnFa' !important;
 }
 
 html {
-  font-family: "VazirMatn";
+  font-family: 'VazirMatn';
   font-size: 14px;
   line-height: 1.7;
   color: #2d354a;
@@ -51,7 +51,7 @@ h6,
 .uk-heading-xlarge,
 .uk-heading-2xlarge,
 .uk-heading-3xlarge {
-  font-family: "VazirMatn";
+  font-family: 'VazirMatn';
   font-weight: bold;
   color: #081f3c;
   line-height: auto !important;
@@ -358,7 +358,7 @@ a.uk-link-heading:hover {
 }
 
 .uk-logo {
-  font-family: "VazirMatn";
+  font-family: 'VazirMatn';
   color: #081f3c;
 }
 
@@ -371,7 +371,7 @@ a.uk-link-heading:hover {
 }
 
 .uk-accordion-title::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 50%;
@@ -385,7 +385,7 @@ a.uk-link-heading:hover {
 }
 
 .uk-open > .uk-accordion-title::before {
-  background-image: url("../icon/ic-plus.svg");
+  background-image: url('../icon/ic-plus.svg');
   transform: translateY(-50%) rotate(45deg);
 }
 
@@ -401,13 +401,13 @@ a.uk-link-heading:hover {
 
 /* ------------------------------------------------------- */
 .ui-hero-bg {
-  background: center / cover no-repeat url("/src/dist/ui/img/ellipse.svg");
+  background: center / cover no-repeat url('/src/dist/ui/img/ellipse.svg');
 }
 .ui-text-navy-blue {
   color: #000080;
 }
 .ui-text-red {
-  color: red;
+  color: #ce2e51;
 }
 .ui-text-grey {
   color: #5c677e;
@@ -417,4 +417,15 @@ a.uk-link-heading:hover {
   height: 64px;
   border-radius: 50px;
   line-height: 64px;
+}
+.ui-coin-hero-left {
+  width: 90px;
+  height: 81px;
+  background: center / cover no-repeat url('/src/dist/ui/img/coin.svg');
+  position: absolute;
+  left: 0;
+  top: -20px;
+  transform: scaleX(-1);
+  z-index: 0;
+  pointer-events: none;
 }
