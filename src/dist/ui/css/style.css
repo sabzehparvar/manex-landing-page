@@ -1,13 +1,13 @@
 .fontface-vazirmatn {
-  font-family: 'VazirMatn' !important;
+  font-family: "VazirMatn" !important;
 }
 
 .fontface-vazir-fa {
-  font-family: 'VazirMatnFa' !important;
+  font-family: "VazirMatnFa" !important;
 }
 
 html {
-  font-family: 'VazirMatn';
+  font-family: "VazirMatn";
   font-size: 14px;
   line-height: 1.7;
   color: #2d354a;
@@ -51,7 +51,7 @@ h6,
 .uk-heading-xlarge,
 .uk-heading-2xlarge,
 .uk-heading-3xlarge {
-  font-family: 'VazirMatn';
+  font-family: "VazirMatn";
   font-weight: bold;
   color: #081f3c;
   line-height: auto !important;
@@ -358,7 +358,7 @@ a.uk-link-heading:hover {
 }
 
 .uk-logo {
-  font-family: 'VazirMatn';
+  font-family: "VazirMatn";
   color: #081f3c;
 }
 
@@ -371,7 +371,7 @@ a.uk-link-heading:hover {
 }
 
 .uk-accordion-title::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -385,7 +385,7 @@ a.uk-link-heading:hover {
 }
 
 .uk-open > .uk-accordion-title::before {
-  background-image: url('../icon/ic-plus.svg');
+  background-image: url("../icon/ic-plus.svg");
   transform: translateY(-50%) rotate(45deg);
 }
 
@@ -448,7 +448,7 @@ a.uk-link-heading:hover {
 }
 
 .ui-hero-bg {
-  background: center / cover no-repeat url('/src/dist/ui/img/ellipse.svg');
+  background: center / cover no-repeat url("/src/dist/ui/img/ellipse.svg");
 }
 .ui-text-navy-blue {
   color: #000080;
@@ -460,7 +460,7 @@ a.uk-link-heading:hover {
   color: #5c677e;
 }
 .ui-text-black {
-  color: #081F3C;
+  color: #081f3c;
 }
 .ui-button-primary {
   width: 230px;
@@ -473,40 +473,78 @@ a.uk-link-heading:hover {
   height: 64px;
   border-radius: 50px;
   line-height: 64px;
-  background: linear-gradient(22.72deg, #CE2E51 -88.95%, #FF4770 118.16%);
-
+  background: linear-gradient(22.72deg, #ce2e51 -88.95%, #ff4770 118.16%);
 }
 .ui-coin-hero-left {
-  width: 60px;
-  height: 54px;
-  background: center / cover no-repeat url('/src/dist/ui/img/coin.svg');
+  width: 115px;
+  height: 104px;
+  background: center / cover no-repeat url("/src/dist/ui/img/coin.svg");
   position: absolute;
   left: 0;
   top: -20px;
-  transform: scaleX(-1);
   z-index: 0;
   pointer-events: none;
   animation: leftCoin 5s linear 0s infinite normal forwards;
 }
 .ui-coin-hero-right {
-  width: 78px;
-  height: 70px;
-  background: center / cover no-repeat url('/src/dist/ui/img/coin.svg');
+  width: 115px;
+  height: 104px;
+  background: center / cover no-repeat url("/src/dist/ui/img/coin.svg");
   position: absolute;
   right: 0;
-  top: -20px;
-
+  top: -100px;
   z-index: 0;
   pointer-events: none;
   animation: rightCoin 7s linear 0s infinite normal forwards;
 }
-@media (min-width: 960px) {
+.ui-diamond-hero-right {
+  width: 93px;
+  height: 70px;
+  background: center / cover no-repeat url("/src/dist/ui/img/pink-diamond.svg");
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  z-index: 0;
+  pointer-events: none;
+  animation: rightCoin 5s linear 0s infinite normal forwards;
+}
+.ui-diamond-hero-left {
+  width: 93px;
+  height: 70px;
+  background: center / cover no-repeat url("/src/dist/ui/img/pink-diamond.svg");
+  position: absolute;
+  left: 150px;
+  top: -20px;
+  z-index: 0;
+  pointer-events: none;
+  animation: leftCoin 6s linear 0s infinite normal forwards;
+}
+@media (max-width: 960px) {
   .ui-coin-hero-left {
-    width: 115px;
-    height: 104px;
+    display: none;
   }
   .ui-coin-hero-right {
-    width: 115px;
-    height: 104px;
+    width: 70px;
+    height: 60px;
+    top: -20px;
+  }
+}
+@media (max-width: 640px) {
+  .ui-coin-hero-right {
+    width: 50px;
+    height: 40px;
+    right: 20px;
+  }
+  .ui-diamond-hero-right {
+    width: 38px;
+    height: 29px;
+    right: 100px;
+    top: 100px;
+  }
+  .ui-diamond-hero-left {
+    width: 38px;
+    height: 29px;
+    left: 150px;
+    top: -20px;
   }
 }
