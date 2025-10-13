@@ -519,6 +519,9 @@ a.uk-link-heading:hover {
   pointer-events: none;
   animation: leftCoin 6s linear 0s infinite normal forwards;
 }
+.ui-hero-image {
+  max-width: 660px;
+}
 @media (max-width: 960px) {
   .ui-coin-hero-left {
     display: none;
@@ -527,6 +530,9 @@ a.uk-link-heading:hover {
     width: 70px;
     height: 60px;
     top: -20px;
+  }
+  .ui-hero-image {
+    max-width: 450px;
   }
 }
 @media (max-width: 640px) {
@@ -546,5 +552,8 @@ a.uk-link-heading:hover {
     height: 29px;
     left: 150px;
     top: -20px;
+  }
+  .ui-hero-image {
+    max-width: 334px;
   }
 }
