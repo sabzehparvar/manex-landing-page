@@ -531,6 +531,18 @@ a.uk-link-heading:hover {
     height: 60px;
     top: -20px;
   }
+  .ui-diamond-hero-right {
+    width: 73px;
+    height: 50px;
+    right: 40px;
+    top: 200px;
+  }
+  .ui-diamond-hero-left {
+    width: 73px;
+    height: 50px;
+    left: 80px;
+    top: -20px;
+  }
   .ui-hero-image {
     max-width: 450px;
   }
@@ -544,13 +556,13 @@ a.uk-link-heading:hover {
   .ui-diamond-hero-right {
     width: 38px;
     height: 29px;
-    right: 100px;
-    top: 100px;
+    right: 10%;
+    bottom: 0;
   }
   .ui-diamond-hero-left {
     width: 38px;
     height: 29px;
-    left: 150px;
+    left: 10%;
     top: -20px;
   }
   .ui-hero-image {
