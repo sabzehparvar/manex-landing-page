@@ -446,12 +446,8 @@ a.uk-link-heading:hover {
     transform: translateY(-6.4px);
   }
 }
-
-.ui-hero-bg {
-  background: center / cover no-repeat url("/src/dist/ui/img/ellipse.svg");
-}
 .ui-text-navy-blue {
-  color: #000080;
+  color: #033F7A;
 }
 .ui-text-red {
   color: #ce2e51;
@@ -461,6 +457,12 @@ a.uk-link-heading:hover {
 }
 .ui-text-black {
   color: #081f3c;
+}
+.ui-text-pink {
+  color: #e83388;
+}
+.ui-hero-bg {
+  background: center / cover no-repeat url("/src/dist/ui/img/ellipse.svg");
 }
 .ui-button-primary {
   width: 230px;
