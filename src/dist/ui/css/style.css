@@ -350,6 +350,12 @@ a.uk-link-heading:hover {
 .uk-accordion-title::before {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23E83388%22%20width%3D%2213%22%20height%3D%222%22%20x%3D%220%22%20y%3D%225.5%22%20%2F%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23E83388%22%20width%3D%222%22%20height%3D%2213%22%20x%3D%225.5%22%20y%3D%220%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
+.uk-accordion li, .uk-accordion.uk-open li {
+  background: #ffffff;
+  box-shadow: 0px 24.56px 32.74px -14.73px rgba(149, 149, 149, 0.25);
+  border-radius: 24px;
+  padding: 30px 30px;
+}
 /* ------------------------------------------------------- */
 @keyframes leftCoin {
   0%,
@@ -475,6 +481,9 @@ a.uk-link-heading:hover {
 .ui-hero-image {
   max-width: 660px;
 }
+.ui-question-mark img {
+  max-width: 260px;
+}
 @media (max-width: 960px) {
   .ui-coin-hero-left {
     display: none;
@@ -520,5 +529,8 @@ a.uk-link-heading:hover {
   }
   .ui-hero-image {
     max-width: 334px;
+  }
+  .ui-question-mark img {
+    max-width: 92px;
   }
 }
