@@ -344,61 +344,12 @@ a.uk-link-heading:hover {
 .uk-padding-large {
   padding: 40px;
 }
-
-@media (min-width: 1200px) {
-  .uk-padding-large {
-    padding: 60px;
-  }
-}
-
-@supports (filter: blur(0)) {
-  .uk-box-shadow-bottom::after {
-    background: #444;
-  }
-}
-
-.uk-logo {
-  font-family: "VazirMatn";
-  color: #081f3c;
-}
-
-.uk-logo:hover {
-  color: #081f3c;
-}
-
-.uk-accordion .uk-open {
-  background-color: #f5f7f9;
-}
-
-.uk-accordion-title::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 24px;
-  height: 24px;
-  background-image: url(../icon/ic-plus.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  transition: 400ms;
-  transform: translateY(-50%);
-}
-
 .uk-open > .uk-accordion-title::before {
-  background-image: url("../icon/ic-plus.svg");
-  transform: translateY(-50%) rotate(45deg);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23E83388%22%20width%3D%2213%22%20height%3D%222%22%20x%3D%220%22%20y%3D%225.5%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
-
-@media (max-width: 768px) {
-  .uk-text-large {
-    font-size: 1.2rem;
-  }
+.uk-accordion-title::before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23E83388%22%20width%3D%2213%22%20height%3D%222%22%20x%3D%220%22%20y%3D%225.5%22%20%2F%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23E83388%22%20width%3D%222%22%20height%3D%2213%22%20x%3D%225.5%22%20y%3D%220%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
-
-.uk-accordion-content ol li {
-  padding-right: 20px;
-}
-
 /* ------------------------------------------------------- */
 @keyframes leftCoin {
   0%,
@@ -447,7 +398,7 @@ a.uk-link-heading:hover {
   }
 }
 .ui-text-navy-blue {
-  color: #033F7A;
+  color: #033f7a;
 }
 .ui-text-red {
   color: #ce2e51;
