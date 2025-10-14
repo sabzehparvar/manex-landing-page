@@ -508,6 +508,26 @@ a.uk-link-heading:hover {
 .ui-question-mark img {
   max-width: 260px;
 }
+.ui-red-dot-1,
+.ui-red-dot-2 {
+  background: linear-gradient(22.72deg, #ce2e51 -88.95%, #ff4770 118.16%);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+.ui-red-dot-1 {
+  width: 110px;
+  height: 110px;
+  left: 194px;
+  top: -53px;
+}
+.ui-red-dot-2 {
+  width: 102px;
+  height: 102px;
+  left: 5px;
+  bottom: 20px;
+}
+
 @media (max-width: 960px) {
   .ui-coin-hero-left {
     display: none;
@@ -531,6 +551,10 @@ a.uk-link-heading:hover {
   }
   .ui-hero-image {
     max-width: 450px;
+  }
+  .ui-red-dot-1,
+  .ui-red-dot-2 {
+    display: none;
   }
 }
 @media (max-width: 640px) {

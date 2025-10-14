@@ -241,8 +241,16 @@
                 </p>
               </div>
             </div>
-            <div class="uk-flex-first@m uk-width-1-2@m">
-              <div uk-scrollspy="cls: uk-animation-slide-right;  delay: 500">
+            <div class="uk-flex-first@m uk-width-1-2@m uk-position-relative">
+              <div
+                class="ui-red-dot-1"
+                uk-parallax="start: 100%; end: 70vh; opacity: 0,1; x: 150,0"
+              ></div>
+              <div
+              class="ui-red-dot-2"
+              uk-parallax="start: 100%; end: 70vh; opacity: 0,1; x: 150,0"
+            ></div>
+              <div uk-scrollspy="cls: uk-animation-slide-right;  delay: 500" class="uk-padding uk-padding-remove-vertical uk-padding-remove-right">
                 <img
                   data-src="./dist/ui/img/mobile-screen.svg"
                   loading="lazy"
@@ -255,10 +263,10 @@
         </div>
       </div>
       <!-- FAQ  -->
-      <div class="uk-section uk-section-default uk-padding-remove-bottom uk-position-relative">
-        <div class=" ui-footer-bg">
-          <!-- <img src="./dist/ui/img/ellipse.svg" alt="" /> -->
-        </div>
+      <div
+        class="uk-section uk-section-default uk-padding-remove-bottom uk-position-relative"
+      >
+        <div class="ui-footer-bg"></div>
         <div class="uk-container uk-container uk-padding-large">
           <div class="uk-margin-xlarge-bottom">
             <h2 class="uk-text-center ui-text-navy-blue">
@@ -321,7 +329,6 @@
               </ul>
             </div>
           </div>
-        
         </div>
       </div>
     </main>
