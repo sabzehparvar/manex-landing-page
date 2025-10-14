@@ -419,21 +419,30 @@ a.uk-link-heading:hover {
 .ui-text-pink {
   color: #e83388;
 }
-.ui-font-weight-500{
+.ui-font-weight-500 {
   font-weight: 500;
 }
-.ui-font-weight-800{
+.ui-font-weight-800 {
   font-weight: 800;
 }
 .ui-hero-bg {
   background: center / cover no-repeat url('/src/dist/ui/img/ellipse.svg');
+}
+.ui-footer-bg {
+  position: absolute;
+  z-index: -1;
+  background: center / cover no-repeat url('/src/dist/ui/img/ellipse.svg');
+  height: 100%;
+  width: 100%;
+  transform: scaleY(-1);
+  min-height: 700px;
 }
 .ui-button-primary {
   width: 230px;
   height: 64px;
   border-radius: 50px;
   line-height: 64px;
-  background-color: #2B73E3;
+  background-color: #2b73e3;
   font-weight: 800;
   font-size: 1rem;
 }
@@ -446,7 +455,7 @@ a.uk-link-heading:hover {
   font-weight: 800;
   font-size: 1rem;
 }
-.ui-button-secondary:hover{
+.ui-button-secondary:hover {
   background: linear-gradient(22.72deg, #b72846 -88.95%, #e23d65 118.16%);
 }
 .ui-coin-hero-left {
