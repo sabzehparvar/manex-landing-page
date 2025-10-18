@@ -426,20 +426,30 @@ a.uk-link-heading:hover {
   font-weight: 800;
 }
 .ui-hero-bg {
-  background: center / cover no-repeat url("/src/dist/ui/img/ellipse.svg");
-  max-width: 1700px;
-  margin-right: auto;
-  margin-left: auto;
+  position: absolute;
+  z-index: -1;
+  background: center / cover no-repeat url(/src/dist/ui/img/ellipse.svg);
+  height: 100%;
+  width: 100%;
+  max-width: 2150px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  padding-bottom: 165px;
 }
 .ui-footer-bg {
   position: absolute;
   z-index: -1;
-  background: center / cover no-repeat url("/src/dist/ui/img/ellipse.svg");
+  background: center / cover no-repeat url(/src/dist/ui/img/ellipse.svg);
   height: 100%;
   width: 100%;
-  transform: scaleY(-1);
   min-height: 700px;
+  max-width: 1700px;
+  left: 50%;
+  transform: translateX(-50%) scaleY(-1);
+  padding-bottom: 350px;
 }
+
 .ui-button-primary {
   width: 230px;
   height: 64px;
