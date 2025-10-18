@@ -1,13 +1,13 @@
 .fontface-vazirmatn {
-  font-family: 'VazirMatn' !important;
+  font-family: "VazirMatn" !important;
 }
 
 .fontface-vazir-fa {
-  font-family: 'VazirMatnFa' !important;
+  font-family: "VazirMatnFa" !important;
 }
 
 html {
-  font-family: 'VazirMatn';
+  font-family: "VazirMatn";
   font-size: 14px;
   line-height: 1.7;
   color: #2d354a;
@@ -51,7 +51,7 @@ h6,
 .uk-heading-xlarge,
 .uk-heading-2xlarge,
 .uk-heading-3xlarge {
-  font-family: 'VazirMatn';
+  font-family: "VazirMatn";
   font-weight: bold;
   color: #081f3c;
   line-height: auto !important;
@@ -345,10 +345,10 @@ a.uk-link-heading:hover {
   padding: 40px;
 }
 .uk-open > .uk-accordion-title::before {
-  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23E83388%22%20width%3D%2213%22%20height%3D%222%22%20x%3D%220%22%20y%3D%225.5%22%20%2F%3E%0A%3C%2Fsvg%3E');
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23E83388%22%20width%3D%2213%22%20height%3D%222%22%20x%3D%220%22%20y%3D%225.5%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 .uk-accordion-title::before {
-  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23E83388%22%20width%3D%2213%22%20height%3D%222%22%20x%3D%220%22%20y%3D%225.5%22%20%2F%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23E83388%22%20width%3D%222%22%20height%3D%2213%22%20x%3D%225.5%22%20y%3D%220%22%20%2F%3E%0A%3C%2Fsvg%3E');
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23E83388%22%20width%3D%2213%22%20height%3D%222%22%20x%3D%220%22%20y%3D%225.5%22%20%2F%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23E83388%22%20width%3D%222%22%20height%3D%2213%22%20x%3D%225.5%22%20y%3D%220%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 .uk-accordion li,
 .uk-accordion.uk-open li {
@@ -426,12 +426,15 @@ a.uk-link-heading:hover {
   font-weight: 800;
 }
 .ui-hero-bg {
-  background: center / cover no-repeat url('/src/dist/ui/img/ellipse.svg');
+  background: center / cover no-repeat url("/src/dist/ui/img/ellipse.svg");
+  max-width: 1700px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .ui-footer-bg {
   position: absolute;
   z-index: -1;
-  background: center / cover no-repeat url('/src/dist/ui/img/ellipse.svg');
+  background: center / cover no-repeat url("/src/dist/ui/img/ellipse.svg");
   height: 100%;
   width: 100%;
   transform: scaleY(-1);
@@ -461,7 +464,7 @@ a.uk-link-heading:hover {
 .ui-coin-hero-left {
   width: 115px;
   height: 104px;
-  background: center / contain no-repeat url('/src/dist/ui/img/coin.svg');
+  background: center / contain no-repeat url("/src/dist/ui/img/coin.svg");
   position: absolute;
   left: 0;
   top: -20px;
@@ -472,7 +475,7 @@ a.uk-link-heading:hover {
 .ui-coin-hero-right {
   width: 115px;
   height: 104px;
-  background: center / contain no-repeat url('/src/dist/ui/img/coin.svg');
+  background: center / contain no-repeat url("/src/dist/ui/img/coin.svg");
   position: absolute;
   right: 0;
   top: -100px;
@@ -483,7 +486,7 @@ a.uk-link-heading:hover {
 .ui-diamond-hero-right {
   width: 93px;
   height: 70px;
-  background: center / cover no-repeat url('/src/dist/ui/img/pink-diamond.png');
+  background: center / cover no-repeat url("/src/dist/ui/img/pink-diamond.png");
   position: absolute;
   right: 100px;
   top: 100px;
@@ -494,7 +497,7 @@ a.uk-link-heading:hover {
 .ui-diamond-hero-left {
   width: 93px;
   height: 70px;
-  background: center / cover no-repeat url('/src/dist/ui/img/pink-diamond.png');
+  background: center / cover no-repeat url("/src/dist/ui/img/pink-diamond.png");
   position: absolute;
   left: 150px;
   top: -20px;
