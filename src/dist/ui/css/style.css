@@ -570,6 +570,17 @@ a.uk-link-heading:hover {
   .ui-red-dot-2 {
     display: none;
   }
+  .ui-blue-diamond {
+    width: 32px;
+  }
+  .ui-desc-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .ui-desc-title img {
+    margin: 0 0 0 15px !important;
+  }
 }
 @media (max-width: 640px) {
   .ui-coin-hero-right {
@@ -594,8 +605,5 @@ a.uk-link-heading:hover {
   }
   .ui-question-mark img {
     max-width: 92px;
-  }
-  .ui-blue-diamond {
-    width: 32px;
   }
 }
