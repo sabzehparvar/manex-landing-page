@@ -429,27 +429,26 @@ a.uk-link-heading:hover {
   position: absolute;
   z-index: -1;
   background: center / cover no-repeat url(/src/dist/ui/img/ellipse.svg);
-  height: 100%;
   width: 100%;
   max-width: 2150px;
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
-  padding-bottom: 165px;
+  padding-bottom: 200px;
+  top: -200px;
 }
 .ui-footer-bg {
   position: absolute;
   z-index: -1;
-  background: center / cover no-repeat url(/src/dist/ui/img/ellipse.svg);
-  height: 100%;
+  background: center / cover no-repeat url(/src/dist/ui/img/footer-ellipse.png);
   width: 100%;
   min-height: 700px;
-  max-width: 1700px;
+  max-width: 2150px;
   left: 50%;
-  transform: translateX(-50%) scaleY(-1);
-  padding-bottom: 350px;
+  transform: translateX(-50%);
+  padding-top: 100px;
+  bottom: -238px;
 }
-
 .ui-button-primary {
   width: 230px;
   height: 64px;
@@ -540,7 +539,9 @@ a.uk-link-heading:hover {
   left: 5px;
   bottom: 20px;
 }
-
+.ui-blue-diamond {
+  width: 64px;
+}
 @media (max-width: 960px) {
   .ui-coin-hero-left {
     display: none;
@@ -593,5 +594,8 @@ a.uk-link-heading:hover {
   }
   .ui-question-mark img {
     max-width: 92px;
+  }
+  .ui-blue-diamond {
+    width: 32px;
   }
 }
