@@ -440,7 +440,7 @@ a.uk-link-heading:hover {
 .ui-footer-bg {
   position: absolute;
   z-index: -1;
-  background: center / cover no-repeat url(/src/dist/ui/img/footer-ellipse.png);
+  background: center / cover no-repeat url(/src/dist/ui/img/footer-ellipse.svg);
   width: 100%;
   min-height: 700px;
   max-width: 2150px;
