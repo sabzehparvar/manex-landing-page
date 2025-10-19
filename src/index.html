@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!-- <meta http-equiv="content-type" content="text/html; charset=utf-8" /> -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
@@ -14,11 +14,7 @@
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="referrer" content="origin-when-cross-origin" />
-    <link
-      href="./dist/ui/icon/favicon/mask-icon.svg"
-      rel="mask-icon"
-      color="#"
-    />
+    <link href="./dist/ui/icon/favicon/mask-icon.svg" rel="mask-icon" />
     <link
       href="./dist/ui/icon/favicon/apple-touch-icon-precomposed.png"
       rel="apple-touch-icon-precomposed"
@@ -35,10 +31,12 @@
       rel="icon"
       type="image/svg+xml"
     />
-    <link href="../../cdn/pkg/uikit/css/uikit-rtl.min.css" rel="stylesheet" />
-    <link href="../../cdn/pkg/vazir/css/font-face.css" rel="stylesheet" />
+    <link rel="preload" href="./dist/ui/img/724-logo.svg" as="image" />
+    <link href="./../cdn/pkg/uikit/css/uikit-rtl.min.css" rel="stylesheet" />
+    <link href="./../cdn/pkg/vazir/css/font-face.css" rel="stylesheet" />
+    <link href="./../cdn/pkg/dana/css/font-face.css" rel="stylesheet" />
     <link href="dist/ui/css/style.css" rel="stylesheet" />
-    <script src="../../cdn/pkg/uikit/js/uikit.min.js" defer></script>
+    <script src="./../cdn/pkg/uikit/js/uikit.min.js" defer></script>
   </head>
 
   <body>
@@ -48,18 +46,24 @@
         class="uk-section uk-section-default uk-padding-remove-top uk-position-relative"
       >
         <div class="ui-hero-bg"></div>
-        <div class="uk-container uk-container">
+        <div class="uk-container">
           <div class="uk-margin-medium-top">
             <div class="uk-text-center">
-              <img src="./dist/ui/img/724-logo.svg" width="100" alt="اپلیکیشن 724" />
+              <a href="#">
+                <img
+                  src="./dist/ui/img/724-logo.svg"
+                  width="100"
+                  alt="اپلیکیشن 724"
+                />
+              </a>
             </div>
             <div class="uk-text-center uk-margin-large-top">
               <div>
-                <h1 class="ui-font-weight-800 ui-text-navy-blue">
+                <h1 class="ui-font-weight-800 ui-text-navy-blue fontface-dana">
                   با <span class="ui-text-red">منکس</span>، پولت به حسابت
                   برمی‌گرده!
                 </h1>
-                <div class="uk-flex uk-flex-center uk-position-relative">
+                <div class="uk-flex uk-flex-center uk-position-relative fontface-dana">
                   <div class="uk-width-3-5@s ui-text-grey ui-font-weight-500">
                     «کش‌بک» یعنی چی؟ یعنی بخشی از پول خرج شده از خریدت دوباره به
                     حسابت برگرده. حالا توی اپلیکیشن ۷۲۴ می‌تونی همین تجربه رو با
@@ -71,6 +75,7 @@
               <a
                 href="#"
                 class="uk-button uk-button-primary uk-border-rounded-2xlarge uk-margin-large ui-button-primary"
+                aria-label="نصب اپلیکیشن ۷۲۴"
               >
                 <img
                   uk-svg
@@ -95,14 +100,15 @@
       </div>
       <!-- manex description 1  -->
       <div class="uk-section uk-section-default">
-        <div class="uk-container uk-container">
+        <div class="uk-container">
           <div uk-grid>
             <div class="uk-flex uk-flex-column uk-flex-center uk-width-1-2@m">
               <div class="uk-text-right ui-desc-title">
                 <img
-                  src="./dist/ui/icon/ic-diamond-blue.svg"
+                  data-src="./dist/ui/icon/ic-diamond-blue.svg"
                   aria-hidden="true"
                   class="uk-margin-bottom ui-blue-diamond"
+                  uk-img="loading: lazy"
                 />
                 <h2 class="ui-font-weight-800 ui-text-navy-blue">
                   چطور می تونی <span class="ui-text-red">منکس</span> بگیری؟
@@ -121,15 +127,15 @@
                 <ul class="ui-text-grey">
                   <li class="uk-margin-small-bottom">
                     شارژ موبایل یا بسته اینترنت رو همیشه از طریق اپلیکیشن ۷۲۴
-                    بخر
+                    بخر.
                   </li>
                   <li class="uk-margin-small-bottom">
                     قبض‌هات رو همیشه با اپلیکیشن ۷۲۴ پرداخت کن.
                   </li>
                   <li>
-                    تا حدامکان خریدهای حضوری یا آنلاینت رو از فروشگاه‌های طرف (
-                    سوپرمارکت، فروشگاه‌های آرایشی، داروخانه و ....) قرارداد
-                    "بامن" انجام بده
+                    تا حدامکان خریدهای حضوری یا آنلاینت رو از فروشگاه‌های طرف
+                    قرارداد "بامن" انجام بده. (سوپرمارکت، فروشگاه‌های آرایشی،
+                    داروخانه و ....)
                   </li>
                 </ul>
                 <p class="ui-text-black">
@@ -142,9 +148,8 @@
               <div uk-scrollspy="cls: uk-animation-slide-right;  delay: 500">
                 <img
                   data-src="./dist/ui/img/mobile.svg"
-                  loading="lazy"
-                  uk-img
-                  alt="منکس"
+                  uk-img="loading: lazy"
+                  alt="چطور می تونی منکس می‌گیری"
                 />
               </div>
             </div>
@@ -153,14 +158,15 @@
       </div>
       <!-- manex description 2  -->
       <div class="uk-section uk-section-default">
-        <div class="uk-container uk-container">
+        <div class="uk-container">
           <div uk-grid>
             <div class="uk-flex uk-flex-column uk-flex-center uk-width-1-2@m">
               <div class="uk-text-right ui-desc-title">
                 <img
-                  src="./dist/ui/icon/ic-diamond-blue.svg"
+                  data-src="./dist/ui/icon/ic-diamond-blue.svg"
                   aria-hidden="true"
                   class="uk-margin-bottom ui-blue-diamond"
+                  uk-img="loading: lazy"
                 />
                 <h2 class="uk-text-bolder ui-text-navy-blue">
                   از کجا می‌تونی <span class="ui-text-red">منکس</span> بگیری؟
@@ -186,6 +192,7 @@
                 <a
                   href="#"
                   class="uk-button uk-button-primary uk-border-rounded-2xlarge uk-margin-medium-top ui-button-secondary"
+                  aria-label="دانلود اپلیکیشن بامن"
                 >
                   دانلود اپلیکیشن بامن
                 </a>
@@ -198,10 +205,9 @@
               >
                 <img
                   data-src="./dist/ui/img/shop-cart.svg"
-                  loading="lazy"
-                  uk-img
+                  uk-img="loading: lazy"
                   width="500"
-                  alt="منکس"
+                  alt="دانلود اپلیکیشن بامن"
                 />
               </div>
             </div>
@@ -210,19 +216,20 @@
       </div>
       <!-- manex description 3  -->
       <div class="uk-section uk-section-default">
-        <div class="uk-container uk-container">
+        <div class="uk-container">
           <div uk-grid>
             <div class="uk-flex uk-flex-column uk-flex-center uk-width-1-2@m">
               <div class="uk-text-right ui-desc-title">
                 <img
-                  src="./dist/ui/icon/ic-diamond-blue.svg"
+                  data-src="./dist/ui/icon/ic-diamond-blue.svg"
                   aria-hidden="true"
                   class="uk-margin-bottom ui-blue-diamond"
+                  uk-img="loading: lazy"
                 />
                 <h2 class="uk-text-bolder ui-text-navy-blue">میدونستی!</h2>
               </div>
               <div class="uk-margin-medium-bottom">
-                <p class="uk-h3 uk-text-normal ui-text-grey">
+                <p class="uk-h3 uk-text-normal uk-text-justify ui-text-grey">
                   با انجام کارهایی که گفته شد، بین ۱% الی ۳۰% از مبلغ هر خریدت
                   به شکل منکس به حسابت برمی گرده، پس از همین امروز اپلیکیشن ۷۲۴
                   رو نصب کن و با منکس، توی هزینه‌هات صرفه‌جویی کن.
@@ -230,15 +237,18 @@
               </div>
               <div class="uk-flex uk-flex-top">
                 <img
-                  src="./dist/ui/icon/ic-star-pink.svg"
+                  data-src="./dist/ui/icon/ic-star-pink.svg"
                   aria-hidden="true"
                   width="32"
                   class="uk-margin-left"
+                  uk-img="loading: lazy"
                 />
-                <p class="uk-h3 uk-text-normal uk-margin-remove ui-text-black">
+                <p
+                  class="uk-h3 uk-text-normal uk-margin-remove uk-text-justify ui-text-black ui-font-weight-500"
+                >
                   برای مشاهده فروشگاه‌های اطراف خودت، اپلیکیشن
                   <span class="ui-text-pink">۷۲۴</span> رو بازکن و تو قسمت
-                  سرویس، باشگاه بامن رو باز کن.
+                  سرویس، باشگاه بامن رو بازکن.
                 </p>
               </div>
             </div>
@@ -257,9 +267,8 @@
               >
                 <img
                   data-src="./dist/ui/img/mobile-screen.svg"
-                  loading="lazy"
-                  uk-img
                   alt="بامن"
+                  uk-img="loading: lazy"
                 />
               </div>
             </div>
@@ -271,7 +280,7 @@
         class="uk-section uk-section-default uk-padding-remove-bottom uk-position-relative"
       >
         <div class="ui-footer-bg"></div>
-        <div class="uk-container uk-container uk-padding-large">
+        <div class="uk-container uk-padding-large">
           <div class="uk-margin-xlarge-bottom">
             <h2 class="uk-text-center ui-text-navy-blue">
               ممکنه سوال تو هم باشه!
@@ -282,9 +291,8 @@
               <div class="ui-question-mark uk-text-center">
                 <img
                   data-src="./dist/ui/img/question-mark.svg"
-                  loading="lazy"
-                  uk-img
-                  alt="علامت سوال"
+                  uk-img="loading: lazy"
+                  alt="ممکنه سوال تو هم باشه!"
                 />
               </div>
             </div>
