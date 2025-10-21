@@ -370,7 +370,10 @@ a.uk-link-heading:hover {
     font-size: 1rem;
     line-height: normal;
   }
-  .uk-h3 {
+  .uk-h1{
+    font-size: 1.7rem;
+  }
+  .uk-h4{
     font-size: 1.15rem;
     line-height: normal;
   }
