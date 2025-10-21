@@ -604,6 +604,9 @@ a.uk-link-heading:hover {
 .ui-blue-diamond {
   width: 64px;
 }
+.ui-pink-star {
+  width: 32px;
+}
 
 @media (max-width: 960px) {
   .ui-coin-hero-left {
@@ -681,5 +684,9 @@ a.uk-link-heading:hover {
 
   .ui-question-mark img {
     max-width: 92px;
+  }
+
+  .ui-pink-star {
+    width: 24px;
   }
 }
